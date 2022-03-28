@@ -1,11 +1,31 @@
-<div class="listaEstudiantes">
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          The current link item
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-      </div>
-</div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">LEGAJO</th>
+      <th scope="col">NOMBRE</th>
+      <th scope="col">APELLIDO</th>
+      <th scope="col">MATEMÁTICA</th>
+      <th scope="col">LITERATURA</th>
+      <th scope="col">INGLÉS</th>
+      <th scope="col">CS. SOCIALES</th>
+      <th scope="col">CS. NATURALES</th>
+    </tr>
+  </thead>
+  
+  <tbody *ngFor="let estudiante of arrayEstudiantes">
+    
+    <tr>
+      <th scope="row">{{ estudiante.legajo }}</th>
+      <td>{{ estudiante.nombre }}</td>
+      <td>{{ estudiante.apellido }}</td>
+      <td>{{ estudiante.notaMat }}</td>
+      <td>{{ estudiante.notaLit }}</td>
+      <td>{{ estudiante.notaIng }}</td>
+      <td>{{ estudiante.notaSoc }}</td>
+      <td>{{ estudiante.notaNat }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+

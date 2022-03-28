@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstudiantesComponent implements OnInit {
 
-  arrayestudiantes:any[] = [
+  arrayEstudiantes:any[] = [
     {
       legajo: 25478,
       nombre: "Victoria",
       apellido: "Cordero",
       notaMat: 9,
-      notaLit: 8,
+      notaLit: 4,
       notaIng: 8.50,
       notaSoc: 9.50,
       notaNat: 8
@@ -28,7 +28,7 @@ export class EstudiantesComponent implements OnInit {
       notaLit: 8.5,
       notaIng: 7.50,
       notaSoc: 8.50,
-      notaNat: 9
+      notaNat: 5
 
     },
 
@@ -39,7 +39,7 @@ export class EstudiantesComponent implements OnInit {
       notaMat: 8,
       notaLit: 7.50,
       notaIng: 7,
-      notaSoc: 9,
+      notaSoc: 4,
       notaNat: 8.50
 
     },
@@ -51,8 +51,20 @@ export class EstudiantesComponent implements OnInit {
       notaMat: 9,
       notaLit: 8,
       notaIng: 8.50,
-      notaSoc: 9.5,
-      notaNat: 8
+      notaSoc: 9.50,
+      notaNat: 3
+
+    },
+
+    {
+      legajo: 30156,
+      nombre: "Abner",
+      apellido: "García",
+      notaMat: 5,
+      notaLit: 8,
+      notaIng: 7.50,
+      notaSoc: 8,
+      notaNat: 9
 
     }
 
