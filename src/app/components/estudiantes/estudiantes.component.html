@@ -19,13 +19,14 @@
       <th scope="row">{{ estudiante.legajo }}</th>
       <td>{{ estudiante.nombre }}</td>
       <td>{{ estudiante.apellido }}</td>
-      <td>{{ estudiante.notaMat }}</td>
-      <td>{{ estudiante.notaLit }}</td>
-      <td>{{ estudiante.notaIng }}</td>
-      <td>{{ estudiante.notaSoc }}</td>
-      <td>{{ estudiante.notaNat }}</td>
+      <td [ngClass]="estudiante.notaMat < 6 ? 'noAprueba' : 'siAprueba'">{{ estudiante.notaMat }}</td>
+      <td [ngClass]="estudiante.notaLit < 6 ? 'noAprueba' : 'siAprueba'">{{ estudiante.notaLit }}</td>
+      <td [ngClass]="estudiante.notaing < 6 ? 'noAprueba' : 'siAprueba'">{{ estudiante.notaIng }}</td>
+      <td [ngClass]="estudiante.notaSoc < 6 ? 'noAprueba' : 'siAprueba'">{{ estudiante.notaSoc }}</td>
+      <td [ngClass]="estudiante.notaNat < 6 ? 'noAprueba' : 'siAprueba'">{{ estudiante.notaNat }}</td>
     </tr>
 
   </tbody>
 </table>
 
+ 

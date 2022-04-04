@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+    
+    fecha = new Date();
 
-  constructor() { }
+    constructor() { }
 
   ngOnInit(): void {
   }
